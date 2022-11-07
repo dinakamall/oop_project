@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Review blog</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+
+  </head>
+  <body>
+    <header class="header">
+
+      <a href="#home" class="logo"> <img src="images/logo.png" alt=""> </a>
+  
+      <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+  
+  </header>
+
+  <nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="homepage.html">home</a>
+    <a href="#about">search</a>
+    <a href="#blogs">blogs</a>
+</nav>
+
+    <section>
+    
+      <h1 style="padding-top: 1rem;
+      padding-left: 20%;
+      font-size: 3.5rem;
+      color: white;" >User reviews</h1>
+      <!--user input file name-->
+        <div class="boxcreate">
+        <h3 style="font-size: 2rem; color: black; line-height: 2; ">File name</h3>
+        <div class="create">
+          <br>
+          <input id="fileName" type="text" class="createTerm1" placeholder="Enter file name...">
+        </div>
+        <!--user input content of the file-->
+        <h3 style="font-size: 2rem; color: black; line-height: 2; ">Content</h3>
+        <div class="create">
+          <textarea id="fileContents" class="createTerm2" rows="5" placeholder="Share your review..."></textarea>
+        </div>
+        <br><br>
+        <!--buttons that have correct id to pass the function back create, update, read and delete function-->
+        <div class="button">
+        <button  id = "btnCreate" class="dropbtn">Create</button>
+        <button  id = "btnUpdate" class="dropbtn">Update</button>
+        <button  id = "btnRead" class="dropbtn">Read</button>
+        <button  id = "btnDelete" class="dropbtn">Delete</button>
+      </div>
+    
+  </section>
+ <!--call back crud file javascript-->     
+<script src="main.js"></script>
+  </body>
+</html>
